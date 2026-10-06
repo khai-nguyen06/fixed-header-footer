@@ -1,0 +1,56 @@
+/* Thiết lập chung */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* 1. FIXED HEADER */
+.navbar {
+    overflow: hidden;
+    background-color: #333333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* 2. MAIN CONTENT AREA */
+.main {
+    padding: 16px;
+    margin-top: 50px;    /* Khoảng cách để nội dung không bị Header che mất */
+    margin-bottom: 60px; /* Khoảng cách để nội dung không bị Footer che mất */
+    height: 1500px;      /* Độ cao tạo thanh cuộn trang */
+}
+
+/* 3. FIXED FOOTER */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #222222;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    z-index: 1000;
+}
+
+.footer p {
+    margin: 0;
+}
